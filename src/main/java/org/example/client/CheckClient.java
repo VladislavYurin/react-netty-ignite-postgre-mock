@@ -50,4 +50,16 @@ public class CheckClient {
                         .bodyToMono(CheckResponse.class);
     }
 
+    public Mono<CheckResponse> callHz(String merchant, String terminal) {
+        return webClient.get()
+                .uri(
+                        target.getBaseUrl() + target.getPathMp()
+                                + "?merchant={m}&terminal={t}",
+                        merchant,
+                        terminal
+                )
+                .retrieve()
+                .bodyToMono(CheckResponse.class);
+    }
+
 }

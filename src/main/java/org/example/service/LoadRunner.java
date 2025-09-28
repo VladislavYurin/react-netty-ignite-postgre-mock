@@ -45,6 +45,7 @@ public class LoadRunner {
                         case "pg": call = client.callPg(m, tn); break;
                         case "ig": call = client.callIg(m, tn); break;
                         case "mp": call = client.callMp(m, tn); break;
+                        case "hz": call = client.callHz(m, tn); break;
                         default:   return Flux.error(new IllegalArgumentException("Unknown mod: " + mod));
                     }
 

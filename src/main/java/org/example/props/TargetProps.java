@@ -13,6 +13,6 @@ public class TargetProps {
     private String pathPg;
     private String pathIg;
     private String pathMp;
-
+    private String pathHz;
 
 }
