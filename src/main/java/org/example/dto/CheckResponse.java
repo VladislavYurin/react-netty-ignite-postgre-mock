@@ -12,4 +12,7 @@ public class CheckResponse {
     @JsonProperty("millis")
     private Long millis;
 
+    @JsonProperty("nanos")
+    private Long nanos;
+
 }

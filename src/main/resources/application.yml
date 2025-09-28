@@ -6,8 +6,9 @@ target:
   path-pg: /check/postgres
   path-ig: /check/ignite
   path-mp: /check/map
+  path-hz: /check/hazelcast
 
 load:
   tps: 3000
   concurrency: 200
-  mod: pg
+  mod: mp

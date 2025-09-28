@@ -51,7 +51,7 @@ public class LoadRunner {
 
                     log.info("call");
                     return call
-                            .doOnNext(r -> max.record(r.getMillis()))
+                            .doOnNext(r -> max.recordBoth(r.getMillis(), r.getNanos()))
                             .doOnError(e -> max.incrementErrors())       // считаем ошибку
                             .onErrorResume(e -> Mono.empty())            // не валим поток, просто пропускаем эту итерацию
                             .then();

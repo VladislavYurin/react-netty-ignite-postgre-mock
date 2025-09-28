@@ -22,6 +22,8 @@ public class MaxController {
         return Map.of(
                 "millisMax", max.getMax(),
                 "millisAvg", max.getAvg(),
+                "nanosMax", max.getMaxNanos(),
+                "nanosAvg", max.getAvgNanos(),
                 "count", max.getCount(),
                 "errorCount", max.getErrors(),
                 "mod", loadProps.getMod()
