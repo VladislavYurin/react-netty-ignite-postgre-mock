@@ -1,0 +1,13 @@
+server:
+  port: 8081
+
+target:
+  base-url: http://localhost:8080
+  path-pg: /check/postgres
+  path-ig: /check/ignite
+  path-mp: /check/map
+
+load:
+  tps: 3000
+  concurrency: 200
+  mod: pg
